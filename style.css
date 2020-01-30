@@ -1,0 +1,22 @@
+body {
+  background: rgb(2, 41, 41);
+}
+
+.lead {
+  text-align: center;
+}
+
+.display-4 {
+  text-align: center;
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+.btn-success {
+  text-align: center;
+  float: center;
+}
