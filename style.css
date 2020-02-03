@@ -11,6 +11,10 @@ body {
   color: black;
 }
 
+.form-control {
+  width: 700px;
+}
+
 h1 {
   text-align: center;
   color: white;

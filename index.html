@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
- 
-
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    
+
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -19,24 +17,25 @@
       crossorigin="anonymous"
     />
     <script
-    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"
-  ></script>
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
     <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
 
     <title>The Planner</title>
   </head>
@@ -51,25 +50,88 @@
       </div>
     </div>
     <h1>Let's Get Started</h1>
-    <div id="btn9" class="button" ><button type="button" class="btn-success">9:00 A.M.</button>
-    <br /><input type="text" class="input"  placeholder="What are your plans?"></div>
-    <div id="btn10" class="button"><button type="button" class="btn-success">10:00 A.M.</button>
-    <br /><input type="text" class="input" placeholder="What are your plans?"></div>
-    <div id="btn11" class="button"><button type="button" class="btn-success">11:00 A.M.</button>
-    <br /><input type="text" class="input" placeholder="What are your plans?"></div>
-    <div id="btn12" class="button"><button type="button" class="btn-success">12:00 P.M.</button>
-    <br /><input type="text" class="input" placeholder="What are your plans?"></div>
-    <div id="btn1" class="button"><button type="button" class="btn-success">1:00 P.M.</button>
-    <br /><input type="text" class="input" placeholder="What are your plans?"></div>
-    <div id="btn2" class="button"><btn></btn><button type="button" class="btn-success">2:00 P.M.</button>
-    <br /><input type="text" class="input" placeholder="What are your plans?"></div>
-    <div id="btn3" class="button"><button type="button" class="btn-success">3:00 P.M.</button>
-    <br /><input type="text" class="input" placeholder="What are your plans?"></div>
-    <div id="btn4" class="button"></div><button type="button" class="input" class="btn-success">4:00 P.M.</button></div>
+    <div id="container">
+      <div class="input-group mb-3 mx-auto" style="width: 700px;">
+        <input
+          type="text"
+          class="form-control"
+          id="btn9"
+          placeholder="9:00A.M."
+          aria-label="Recipient's username"
+          aria-describedby="button-addon2"
+        />
+        <div class="input-group-append">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-addon2"
+            onclick="userInfo()"
+          >
+            Add
+          </button>
+        </div>
+        <div class="input-group mb-3 mx-auto" style="width: 700px;">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="10:00 A.M."
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+          />
+          <div class="input-group-append">
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="button-addon2"
+            >
+              Add
+            </button>
+          </div>
+          <div class="input-group mb-3 mx-auto" style="width: 700px;">
+            <input type="text" class="form-control" placeholder="11:00 A.M." aria-label="Recipient's username" aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button" id="button-addon2">Add</button>
+            </div>
+            <div class="input-group mb-3 mx-auto" style="width: 700px;">
+              <input type="text" class="form-control" placeholder="12:00 A.M." aria-label="Recipient's username" aria-describedby="button-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Add</button>
+              </div>
+              <br>
+              <div class="input-group mb-3 mx-auto" style="width: 700px;">
+                <input type="text" class="form-control" placeholder="1:00 P.M." aria-label="Recipient's username" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button" id="button-addon2">Add</button>
+                </div>
+                <br>
+                <div class="input-group mb-3 mx-auto" style="width: 700px;">
+                  <input type="text" class="form-control" placeholder="2:00 P.M." aria-label="Recipient's username" aria-describedby="button-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Add</button>
+                  </div>
+                  <br>
+                  <div class="input-group mb-3 mx-auto" style="width: 700px;">
+                    <input type="text" class="form-control" placeholder="3:00 P.M." aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Add</button>
+                    </div>
+                    <br>
+                    <div class="input-group mb-3 mx-auto" style="width: 700px;">
+                      <input type="text" class="form-control" placeholder="4:00 P.M." aria-label="Recipient's username" aria-describedby="button-addon2">
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Add</button>
+                      </div>
+
+        </div>
+
+        
+      <button id="saveBtn">Save</button>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
     <script src="script.js"></script>
+    <!-- Moments.js API goes here  -->
     <script src="moments.js"></script>
     <script>
       console.log(moment());
