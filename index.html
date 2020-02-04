@@ -42,39 +42,44 @@
   <link rel="stylesheet" type="text/css" href="style.css" />
   <body>
     <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">Work Day Schedule</h1>
-        <p class="lead">
-          Date and Time Goes Here
+      <div class="container" >
+        <h1 class="display-4">Your Schedule</h1>
+        
+        
+        <p class="lead" id="currentTime">
+          Date and Time Go Here
         </p>
       </div>
     </div>
     <h1>Let's Get Started</h1>
     <div id="container">
       <div class="input-group mb-3 mx-auto" style="width: 700px;">
+        <div class="timenow" id="9">9 A.M.</div>
         <input
           type="text"
           class="form-control"
           id="btn9"
-          placeholder="9:00A.M."
+          placeholder="What are your plans?"
           aria-label="Recipient's username"
           aria-describedby="button-addon2"
         />
         <div class="input-group-append">
           <button
-            class="btn btn-outline-secondary"
+            class="btn btn-outline-secondary addBtn"
             type="button"
-            id="button-addon2"
-            onclick="userInfo()"
+            id="btn-9"
+         
           >
             Add
           </button>
         </div>
         <div class="input-group mb-3 mx-auto" style="width: 700px;">
+          <div class="timenow" id="10">10 A.M.</div>
           <input
             type="text"
             class="form-control"
-            placeholder="10:00 A.M."
+            id="btn10"
+            placeholder="What are your plans?"
             aria-label="Recipient's username"
             aria-describedby="button-addon2"
           />
@@ -82,59 +87,67 @@
             <button
               class="btn btn-outline-secondary"
               type="button"
-              id="button-addon2"
+              id="btn-10"
             >
               Add
             </button>
           </div>
           <div class="input-group mb-3 mx-auto" style="width: 700px;">
-            <input type="text" class="form-control" placeholder="11:00 A.M." aria-label="Recipient's username" aria-describedby="button-addon2">
+            <div class="timenow" id="11">11 A.M.</div>
+            <input type="text" class="form-control" id="btn11" placeholder="What are your plans?" aria-label="Recipient's username" aria-describedby="button-addon2">
             <div class="input-group-append">
-              <button class="btn btn-outline-secondary" type="button" id="button-addon2">Add</button>
+              <button class="btn btn-outline-secondary" type="button" id="btn-11">Add</button>
             </div>
             <div class="input-group mb-3 mx-auto" style="width: 700px;">
-              <input type="text" class="form-control" placeholder="12:00 A.M." aria-label="Recipient's username" aria-describedby="button-addon2">
+              <div class="timenow" id="12">12 P.M.</div>
+              <input type="text" class="form-control" id="btn12" placeholder="What are your plans?" aria-label="Recipient's username" aria-describedby="button-addon2">
               <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Add</button>
+                <button class="btn btn-outline-secondary" type="button" id="btn-12">Add</button>
               </div>
               <br>
               <div class="input-group mb-3 mx-auto" style="width: 700px;">
-                <input type="text" class="form-control" placeholder="1:00 P.M." aria-label="Recipient's username" aria-describedby="button-addon2">
+                <div class="timenow" id="13">1 P.M.</div>
+                <input type="text" class="form-control" id="1" placeholder="What are your plans?" aria-label="Recipient's username" aria-describedby="button-addon2">
                 <div class="input-group-append">
-                  <button class="btn btn-outline-secondary" type="button" id="button-addon2">Add</button>
+                  <button class="btn btn-outline-secondary" type="button" id="btn-1">Add</button>
                 </div>
                 <br>
                 <div class="input-group mb-3 mx-auto" style="width: 700px;">
-                  <input type="text" class="form-control" placeholder="2:00 P.M." aria-label="Recipient's username" aria-describedby="button-addon2">
+                  <div class="timenow" id="14">2 P.M.</div>
+                  <input type="text" class="form-control" id="2" placeholder="What are your plans?" aria-label="Recipient's username" aria-describedby="button-addon2">
                   <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Add</button>
+                    <button class="btn btn-outline-secondary" type="button" id="btn-2">Add</button>
                   </div>
                   <br>
                   <div class="input-group mb-3 mx-auto" style="width: 700px;">
-                    <input type="text" class="form-control" placeholder="3:00 P.M." aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <div class="timenow" id="15">3 P.M.</div>
+                    <input type="text" class="form-control" id="3" placeholder="What are your plans?" aria-label="Recipient's username" aria-describedby="button-addon2">
                     <div class="input-group-append">
-                      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Add</button>
+                      <button class="btn btn-outline-secondary" type="button" id="btn-3">Add</button>
                     </div>
                     <br>
                     <div class="input-group mb-3 mx-auto" style="width: 700px;">
-                      <input type="text" class="form-control" placeholder="4:00 P.M." aria-label="Recipient's username" aria-describedby="button-addon2">
+                      <div class="timenow" id="16">4 P.M.</div>
+                      <input type="text" class="form-control" id="4" placeholder="What are your plans?" aria-label="Recipient's username" aria-describedby="button-addon2">
                       <div class="input-group-append">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Add</button>
+                        <button class="btn btn-outline-secondary" type="button" id="btn-4">Add</button>
                       </div>
 
         </div>
 
         
-      <button id="saveBtn">Save</button>
+      
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-    <script src="script.js"></script>
+    
     <!-- Moments.js API goes here  -->
     <script src="moments.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script>
       console.log(moment());
     </script>
+    <script src="script.js"></script>
   </body>
 </html>
