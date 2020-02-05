@@ -7,7 +7,7 @@ body {
 }
 
 .timenow {
-  color: white;
+  color: black;
 }
 
 .display-4 {
@@ -28,7 +28,3 @@ h1 {
   text-align: center;
   float: center;
 }
-
-/* #btn9 {
-  background: red;
-} */
